@@ -7,6 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class EditfavoritethingComponent implements OnInit {
 
+  @Input()
   selectedThing: object;
 
   constructor() { }
