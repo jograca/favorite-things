@@ -3,11 +3,13 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
+import { EditfavoritethingComponent } from './components/editfavoritething/editfavoritething.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    EditfavoritethingComponent
   ],
   imports: [
     BrowserModule,
