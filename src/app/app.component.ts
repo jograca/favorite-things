@@ -12,7 +12,11 @@ export class AppComponent {
   thingAdded: string;
   selectedThing: string;
 
-  favoriteThingsArray = ['Backpacking', 'Beers', 'Brats', 'Your Mom'];
+  favoriteThingsArray = [
+    {id: 1, name: 'Backpacking'},
+    {id: 2, name: 'Beers'},
+    {id: 3, name: 'Brats'},
+    {id: 4, name: 'Your Mom'}];
 
   clickedThing(thingClicked): void {
     console.log('Clicked Thing: ' + thingClicked);

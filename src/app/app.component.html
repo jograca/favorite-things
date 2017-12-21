@@ -1,7 +1,7 @@
 <ul>
   <li (click)="clickedThing(favoriteThing)" 
       *ngFor="let favoriteThing of favoriteThingsArray; let i = index;">
-        {{ i + 1 }}.  {{ favoriteThing }} 
+        {{ i + 1 }}.  {{ favoriteThing.name }} 
   </li>
 </ul>
 
@@ -13,7 +13,8 @@
 </form>
 
 <br>
+<br>
 
-Edit Favorite Thing: <input [(ngModel)]="selectedThing" type="text">
-
-{{ selectedThing }}
+<div *ngIf="selectedThing">
+  Edit Favorite Thing: <input [(ngModel)]="selectedThing.name" name="name">
+</div>
