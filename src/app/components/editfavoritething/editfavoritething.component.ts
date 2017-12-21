@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-editfavoritething',
@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./editfavoritething.component.css']
 })
 export class EditfavoritethingComponent implements OnInit {
+
+  selectedThing: object;
 
   constructor() { }
 
